@@ -1,15 +1,16 @@
+/*
 :root {
-  /* fonts */
+   fonts 
   --main-font: 'Roboto', sans-serif;
   --scndry-font: 'Raleway', sans-serif;
 
-  /* text colors */
+   text colors 
   --maint-txt-cl: #212121;
   --scnd-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
   --wht-txt-a60-cl: rgba(255, 255, 255, 0.6);
 
-  /* bg-colors */
+   bg-colors 
   --dark-bg-cl: #2f303a;
   --mid-bg-cl: #f5f4fa;
   --wht-bg-cl: #ffffff;
@@ -21,13 +22,13 @@
   --cl-icons: #afb1b8;
   --bg-overlay: rgba(33, 150, 243, 0.9);
 
-  /* others */
+   others 
   --anim-main: 250ms;
   --backdrop-cl: rgba(0, 0, 0, 0.2);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-body {
+/** body {
   font-family: var(--main-font);
   color: var(--maint-txt-cl);
   background-color: var(--wht-bg-cl);
@@ -36,11 +37,10 @@ body {
 }
 .no-scroll {
   overflow: hidden;
-}
+} **/
 /* reset styles */
 
-
-.visually-hidden {
+/**.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -52,18 +52,9 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+}**/
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.no-scroll {
-  overflow: hidden;
-}
-
-h1,
+/**h1,
 h2,
 h3,
 h4,
@@ -78,21 +69,30 @@ p {
   color: var(--maint-txt-cl);
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+}**/
 
 /* base styles */
 
-.container {
+/*.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 /* animation */
 
@@ -101,7 +101,7 @@ img {
   | Header section
   |============================
 **/
-.header {
+/**.header {
   border-bottom: 1px solid var(--ee-bg-cl);
 /*
   position: fixed;
@@ -109,19 +109,20 @@ img {
   left: 0;
   width: 100%;
   */
-}
+/*}
+**/
 /*
 .header.no-apacity {
   background-color: var(--wht-bg-cl);
 }
 */
-.header__container {
+/*.header__container {
   display: flex;
   align-items: center;
-}
+}*/
 
 
-.logo-link {
+/*.logo-link {
   font-family: var(--scndry-font);
   font-weight: 700;
   font-size: 26px;
@@ -135,9 +136,9 @@ img {
 }
 .logo-accent-ft {
   color: var(--wht-bg-cl);
-}
+}*/
 
-.nav__list {
+/*.nav__list {
   display: flex;
   gap: 50px;
 }
@@ -161,7 +162,6 @@ img {
 .header__phone:hover,
 .header__phone:focus {
   color: var(--accent-txt-cl);
-
 }
 
 .nav__link--current {
@@ -203,7 +203,7 @@ img {
   transition-property: color;
   transition-timing-function: var(--cubic-bezier);
   transition-duration: var(--anim-main);
-}
+}*/
 
 
 
@@ -212,12 +212,23 @@ img {
   | Hero section
   |============================
 */
-.hero {
+
+/*.hero {
   text-align: center;
-}
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark-bg-cl);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page_1/bg_1p.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+}*/
 
 
-.hero__header {
+/*.hero__header {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -229,9 +240,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
-}
+}*/
 
-.hero__button {
+/*.hero__button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -249,23 +260,13 @@ img {
   transition-property: background-color;
   transition-timing-function: var(--cubic-bezier);
   transition-duration: var(--anim-main);
-}
-.hero__button:hover,
-.hero__button:focus {
+
+  &:hover,
+  &:focus {
   background-color: var(--focus-btn-cl);
 }
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--dark-bg-cl);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/page_1/bg_1p.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 200px 0;
-}
+}*/
+
 
 /*
   |============================
@@ -314,9 +315,9 @@ img {
   margin-right: 0;
 }
 
-.section {
+/*.section {
   padding: 94px 0;
-}
+}*/
 
 /* Work pictures section */
 .work-pic {
@@ -438,15 +439,15 @@ img {
   transition-timing-function: var(--cubic-bezier);
   transition-duration: var(--anim-main);
 }
-
-.socian-svg {
-  fill: currentColor;
-}
 .social__link:hover,
 .social__link:focus {
   background-color: var(--accent-txt-cl);
   color: var(--wht-bg-cl);
 }
+.socian-svg {
+  fill: currentColor;
+}
+
 
 
 /*Clients Section*/
@@ -596,7 +597,7 @@ address {
   padding: 15px 16px;
   margin-right: 10px;
 }
-.futer__subscribe__bnt {
+/*.futer__subscribe__bnt {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -618,7 +619,7 @@ address {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   position: relative;
-}
+}*/
 .futer__form {
   display: block;
   align-items: baseline;
@@ -769,7 +770,7 @@ address {
   | Modal Window
   |============================
 **/
-.backdrop.is-hidden {
+/*.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -801,9 +802,9 @@ address {
   align-items: center;
   padding: 40px;
   text-align: center;
-}
+}*/
 
-.modal-btn {
+/*.modal-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -834,9 +835,9 @@ address {
 .modal-btn:focus .modal-btn-svg {
   fill: var(--accent-txt-cl);
 
-}
+}*/
 
-.register-form-title {
+/*.register-form-title {
   font-weight: 700;
   display: block;
   font-size: 20px;
@@ -920,10 +921,10 @@ address {
 }
 .register-form-agreement-link {
   color: var(--accent-txt-cl);
-}
+}*/
 
 
-.submit-btn {
+/*.submit-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -946,9 +947,9 @@ address {
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: var(--focus-btn-cl);
-}
+}*/
 
-.register-fotm-grup {
+/*.register-fotm-grup {
   margin-bottom: 20px;
 }
 .register-form-agreement {
@@ -957,4 +958,4 @@ address {
 }
 .check__input:checked + .register-form-agreement-text {
   background-image: url(./images/icons.svg#md-chek-icn);
-}
+}*/

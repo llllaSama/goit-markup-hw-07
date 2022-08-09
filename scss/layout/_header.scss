@@ -1,0 +1,30 @@
+/**
+| ==========
+| block 4
+| ==========
+**/
+.header {
+    border-bottom: 1px solid var(--ee-bg-cl);
+  /*
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    */
+  }
+
+  .logo-link {
+    font-family: var(--scndry-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    text-decoration: none;
+    color: var(--accent-txt-cl);
+    margin-right: 93px;
+  }
+  .logo-accent {
+    color: var(--maint-txt-cl);
+  }
+  .logo-accent-ft {
+    color: var(--wht-bg-cl);
+  }

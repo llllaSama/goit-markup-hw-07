@@ -1,0 +1,111 @@
+/**
+| ==========
+| block 3
+| ==========
+**/
+.hero__button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    background-color: var(--accent-txt-cl);
+    color: var(--wht-bg-cl);
+    cursor: pointer;
+    border: 0;
+    padding: 10px 32px;
+    min-width: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    transition-property: background-color;
+    transition-timing-function: var(--cubic-bezier);
+    transition-duration: var(--anim-main);
+  
+    &:hover,
+    &:focus {
+    background-color: var(--focus-btn-cl);
+  }
+  }
+
+.futer__subscribe__bnt {
+display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-timing-function: var(--cubic-bezier);
+  transition-duration: var(--anim-main);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  color: var(--wht-bg-cl);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.submit-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  color: var(--wht-bg-cl);
+  cursor: pointer;
+  border: 0;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color;
+  transition-timing-function: var(--cubic-bezier);
+  transition-duration: var(--anim-main);
+
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--focus-btn-cl);
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+}
+.modal-btn-svg {
+  transition-property: fill;
+  transition-duration: var(--anim-main);
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.modal-btn:hover .modal-btn-svg {
+  fill: var(--accent-txt-cl);
+
+}
+.modal-btn:focus .modal-btn-svg {
+  fill: var(--accent-txt-cl);
+
+}
